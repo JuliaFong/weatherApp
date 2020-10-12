@@ -21,17 +21,25 @@ const request = require('request')
 //&limit=1
 // Address -> Lat/Long -> Weather
 
-const geocodeURL = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=pk.eyJ1IjoianVsaWFtZm9uZyIsImEiOiJjazN5dDBhbnMwNWl2M3NuMGM2aDV5cDhtIn0.VslPz2w-qm-yq_u4vyeOrA&limit=1'
+// const geocodeURL = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=pk.eyJ1IjoianVsaWFtZm9uZyIsImEiOiJjazN5dDBhbnMwNWl2M3NuMGM2aDV5cDhtIn0.VslPz2w-qm-yq_u4vyeOrA&limit=1'
 
-request({ url: geocodeURL, json: true}, (error, response) => {
-    if(error) {
-        console.log("Unable to connect")
-    } else if (response.body.features.length === 0) {
-        console.log("Unable to find location")
-    } else {
-        const latitude = response.body.features[0].center[1]
-        const longitude = response.body.features[0].center[0]
-        console.log(latitude, longitude)
-    }
+// request({ url: geocodeURL, json: true}, (error, response) => {
+//     if(error) {
+//         console.log("Unable to connect")
+//     } else if (response.body.features.length === 0) {
+//         console.log("Unable to find location")
+//     } else {
+//         const latitude = response.body.features[0].center[1]
+//         const longitude = response.body.features[0].center[0]
+//         console.log(latitude, longitude)
+//     }
 
+// })
+
+
+
+
+geocode('Philadelphia New York', (error, data) => {
+    console.log('Error', error)
+    console.log("Data", data)
 })

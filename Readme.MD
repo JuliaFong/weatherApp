@@ -7,6 +7,9 @@ Real time weather app
 * Add an API
 * Learn how to use the Weather Stack API
 * Utilize MapBox API
+* Dive deep into learning about callbacks
+* Review how to set up error handling
+
 
 # APIs Used
 * Weather Stack
