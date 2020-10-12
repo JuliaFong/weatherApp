@@ -6,3 +6,8 @@ Real time weather app
 * Review HTTP requests
 * Add an API
 * Learn how to use the Weather Stack API
+* Utilize MapBox API
+
+# APIs Used
+* Weather Stack
+* MapBox
